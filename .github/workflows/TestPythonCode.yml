@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Test
 
 # Controls when the workflow will run
 on:
@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install Dependacies
-        run: sudo apt-get update && sudo apt-get install python && sudoapt-get install pip && pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+        run: sudo apt-get update && sudo apt-get install python3 && sudo apt-get install pip && pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
 
       # Runs a set of commands using the runners shell
       - name: Run the python file
